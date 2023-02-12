@@ -1,20 +1,21 @@
 
-function MyFizzBuzzFunction(){
+function MyFizzBuzzFunction(index){
+   
 
     for (let index = 1; index <= 100; index++){
-        // console.log(index);
+       let contains =  index.toString()
 
     if (index % 3 == 0 && index % 5 == 0) {
         console.log("FizzBuzz");
         
     }  
-    else if (index % 3 == 0){
+    if (index % 3 == 0 || contains.includes("3") ){
         console.log("Fizz");
     }
-    else if (index % 5 == 0){
+     if (index % 5 == 0 || contains.includes("5")){
     console.log("Buzz");
     }
-    else if(index % 5 != 0 && index % 3 != 0){
+    if(index % 5 != 0 && index % 3 != 0){
         console.log(index);
     }
     }
